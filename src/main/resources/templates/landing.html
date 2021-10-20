@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{component/layout}">
+<head>
+<body>
+<div layout:fragment="content" th:remove="tag">
+    <div class="container mt-4">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img th:src="@{'/image/slider-1.png'}" alt="Logo" class="bd-placeholder-img shadow-sm">
+                    <div class="container">
+                        <div class="carousel-caption text-end text-raintek-darksecondary mobile-bg">
+                            <h1 class="bold">Dapatkan<br/>Kemudahan Akses</h1>
+
+                            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>
+                                sed do eiusmod tempor incididunt ut<br/>
+                                labore et dolore magna aliqua.</h6>
+                            <br/>
+                            <br/>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img th:src="@{'/image/slider-2.png'}" alt="Logo" class="bd-placeholder-img shadow-sm">
+                    <div class="container">
+                        <div class="carousel-caption text-start text-white pb-0">
+                            <h1 class="bold">Efektifitas &<br/>Efisiensi Meningkat</h1>
+
+                            <h6 class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>
+                                sed do eiusmod tempor incididunt ut.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img th:src="@{'/image/slider-3.png'}" alt="Logo" class="bd-placeholder-img shadow-sm">
+                    <div class="container">
+                        <div class="carousel-caption text-end text-raintek-darksecondary mobile-bg">
+                            <h1 class="bold">Jaringan<br/>Dimana Saja</h1>
+
+                            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>
+                                sed do eiusmod tempor incididunt ut.</h6>
+                            <br/>
+                            <br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="portlet shadow-sm">
+            <div class="portlet-head">
+                <div class="portlet-head--title">
+                    <h4 class="text-raintek-secondary bold">Pelanggan Yang Telah Menggunakan Platform Kami</h4>
+                    <hr class="my-0 d-inline-block mx-auto bg-raintek-primary opacity-100" style="height: 5px; width: 150px"/>
+                </div>
+                <div class="portlet-head--tools">
+                    <a href="/" class="text-raintek-primary text-decoration-none" >Lihat Semua</a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="card radius-10 mb-3">
+                            <div class="px-3 pt-3 d-flex justify-content-center align-items-center" style="height: 110px">
+                                <img th:src="@{'/image/pelanggan/unilever.png'}" class="mh-100 mw-100" alt="pelanggan-1">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title bold text-center"><small>Unilever</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card radius-10 mb-3">
+                            <div class="px-3 pt-3 d-flex justify-content-center align-items-center" style="height: 110px">
+                                <img th:src="@{'/image/pelanggan/indofood.png'}" class="mh-100 mw-100" alt="pelanggan-1">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title bold text-center"><small>Indofood</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card radius-10 mb-3">
+                            <div class="px-3 pt-3 d-flex justify-content-center align-items-center" style="height: 110px">
+                                <img th:src="@{'/image/pelanggan/nestle.png'}" class="mh-100 mw-100" alt="pelanggan-1">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title bold text-center"><small>Nestle</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card radius-10 mb-3">
+                            <div class="px-3 pt-3 d-flex justify-content-center align-items-center" style="height: 110px">
+                                <img th:src="@{'/image/pelanggan/cocacola.png'}" class="mh-100 mw-100" alt="pelanggan-1">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title bold text-center"><small>Coca Cola</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card radius-10 mb-3">
+                            <div class="px-3 pt-3 d-flex justify-content-center align-items-center" style="height: 110px">
+                                <img th:src="@{'/image/pelanggan/unilever.png'}" class="mh-100 mw-100" alt="pelanggan-1">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title bold text-center"><small>Unilever</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card radius-10 mb-3">
+                            <div class="px-3 pt-3 d-flex justify-content-center align-items-center" style="height: 110px">
+                                <img th:src="@{'/image/pelanggan/unilever.png'}" class="mh-100 mw-100" alt="pelanggan-1">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title bold text-center"><small>Unilever</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-raintek-accent mt-4 position-relative overflow-hidden">
+        <div class="bg-white rounded-circle position-absolute circle-icon"></div>
+        <div class="container z-index-2 position-relative">
+            <div class="row">
+                <div class="col-md-6 p-5">
+                    <img th:src="@{'/image/icon-home.svg'}" alt="icon" class="w-100 px-5"/>
+                </div>
+                <div class="col-md-6 text-center pt-3 icon-container">
+                    <h3 class="bold mt-5 px-5">Ingin Menggunakan Platform Kami?</h3>
+                    <br/>
+                    <h5>Bagi Anda pelanggan kami yang ingin<br/> menggunakan platform kami, Anda dapat<br/> mendaftar pada link dibawah.</h5>
+                    <br/>
+                    <a href="/" class="btn btn-raintek-secondary bold mb-5">Daftar Disini</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="portlet shadow-sm">
+            <div class="portlet-head">
+                <div class="portlet-head--title">
+                    <h4 class="text-raintek-secondary bold">Patner Kami</h4>
+                    <hr class="my-0 d-inline-block mx-auto bg-raintek-primary opacity-100" style="height: 5px; width: 150px"/>
+                </div>
+                <div class="portlet-head--tools">
+                    <a href="/" class="text-raintek-primary text-decoration-none" >Lihat Semua</a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card radius-10 mb-3">
+                            <div class="p-3 d-flex justify-content-center align-items-center" style="height: 150px">
+                                <img th:src="@{'/image/patner/tokopedia.png'}" class="mh-100 mw-100" alt="pelanggan-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card radius-10 mb-3">
+                            <div class="p-3 d-flex justify-content-center align-items-center" style="height: 150px">
+                                <img th:src="@{'/image/patner/shopee.png'}" class="mh-100 mw-100" alt="pelanggan-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card radius-10 mb-3">
+                            <div class="p-3 d-flex justify-content-center align-items-center" style="height: 150px">
+                                <img th:src="@{'/image/patner/bukalapak.png'}" class="mh-100 mw-100" alt="pelanggan-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card radius-10 mb-3">
+                            <div class="p-3 d-flex justify-content-center align-items-center" style="height: 150px">
+                                <img th:src="@{'/image/patner/lazada.png'}" class="mh-100 mw-100" alt="pelanggan-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

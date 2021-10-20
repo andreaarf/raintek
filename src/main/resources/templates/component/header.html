@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<th:block th:fragment="header" th:remove="tag">
+    <header class="p-3 bg-white text-dark shadow-sm sticky-top">
+        <div class="container px-0">
+            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img alt="Logo" th:src="@{'/image/raintek.png'}" height="50"/>
+                </a>
+
+                <div class="text-end">
+                    <a href="/" class="btn btn-outline-raintek-secondary me-2 bold">Masuk</a>
+                    <a href="/" class="btn btn-raintek-primary bold">Daftar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+</th:block>
+</body>
+</html>

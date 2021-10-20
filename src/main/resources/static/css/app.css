@@ -1,0 +1,185 @@
+:root {
+    --raintek-primary: 237, 151, 14;
+    --raintek-secondary: 79, 78, 77;
+    --raintek-accent: 248, 206, 140;
+    --raintek-background: 255, 252, 248;
+    --raintek-darksecondary: 31, 31, 30;
+}
+body {
+    background-color: rgb(var(--raintek-background));
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.btn{
+    font-family: "Open Sans", sans-serif;
+    border-radius: 8px;
+    font-size: 12px;
+    padding: 8px 35px 8px 35px;
+}
+.btn:focus{
+    box-shadow: none;
+}
+
+.btn-raintek-primary, .btn-raintek-primary:focus{
+    color: white;
+    background-color: rgb(var(--raintek-primary));
+    border-color: rgb(var(--raintek-primary));
+    box-shadow: 0 10px 20px rgba(var(--raintek-primary), 0.4);
+ }
+.btn-raintek-secondary, .btn-raintek-secondary:focus{
+    color: white;
+    background-color: rgb(var(--raintek-secondary));
+    border-color: rgb(var(--raintek-secondary));
+    box-shadow: 0 10px 20px rgba(var(--raintek-secondary), 0.4);
+}
+.btn-raintek-accent, .btn-raintek-accent:focus{
+    color: white;
+    background-color: rgb(var(--raintek-accent));
+    border-color: rgb(var(--raintek-accent));
+    box-shadow: 0 10px 20px rgba(var(--raintek-accent), 0.4);
+}
+.btn-outline-raintek-primary{
+    color: rgb(var(--raintek-primary));
+    background-color: white;
+    border-color: rgb(var(--raintek-primary));
+}
+.btn-outline-raintek-secondary{
+    color: rgb(var(--raintek-secondary));
+    background-color: white;
+    border-color: rgb(var(--raintek-secondary));
+}
+.btn-outline-raintek-accent{
+    color: rgb(var(--raintek-accent));
+    background-color: white;
+    border-color: rgb(var(--raintek-accent));
+}
+
+.bg-raintek-primary{
+    background-color: rgb(var(--raintek-primary));
+}
+.bg-raintek-secondary{
+    background-color: rgb(var(--raintek-secondary));
+}
+.bg-raintek-accent{
+    background-color: rgb(var(--raintek-accent));
+}
+.bg-raintek-background{
+    background-color: rgb(var(--raintek-background));
+}
+.bg-raintek-darksecondary{
+    background-color: rgb(var(--raintek-darksecondary));
+}
+
+.text-raintek-primary{
+    color: rgb(var(--raintek-primary));
+}
+.text-raintek-secondary{
+    color: rgb(var(--raintek-secondary));
+}
+.text-raintek-accent{
+    color: rgb(var(--raintek-accent));
+}
+.text-raintek-background{
+    color: rgb(var(--raintek-background));
+}
+.text-raintek-darksecondary{
+    color: rgb(var(--raintek-darksecondary));
+}
+
+.radius-10{
+    border-radius: 10px;
+}
+
+.sosmed{
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 320px;
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+}
+.carousel-control-prev, .carousel-control-next{
+    width: auto;
+    padding: 0 10px;
+}
+.carousel-caption{
+    left: 5%;
+    right: 5%;
+}
+
+.mobile-bg{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.portlet{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+.portlet-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.circle-icon{
+    width: 0;
+    height: 0;
+}
+
+.icon-container{
+    background-color: white;
+    border-radius: 100%;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 992px) {
+    .carousel-item > img {
+        width: 100%;
+    }
+    .mobile-bg{
+        background-color: transparent;
+        left: 5%;
+        right: 15%;
+    }
+    .circle-icon{
+        width: 60%;
+        height: 160%;
+        bottom: 10%;
+        right: -10%;
+    }
+    .icon-container{
+        background-color: unset;
+    }
+}

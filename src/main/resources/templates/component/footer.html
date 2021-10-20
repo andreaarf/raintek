@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<th:block th:fragment="footer" th:remove="tag">
+    <footer class="text-center text-lg-start text-white">
+
+        <!-- Section: Links  -->
+        <section class="bg-raintek-secondary">
+            <div class="container text-center text-md-start mt-5 py-3">
+                <!-- Grid row -->
+                <div class="row py-5">
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-4">
+                        <!-- Content -->
+                        <h5 class="fw-bold"><span class="text-raintek-primary">Sekilas</span> Raintek</h5>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto bg-white w-75 opacity-100" style="height: 2px"/>
+                        <p>
+                            Raintek adalah perusahaan yang bergerak disektor teknologi informasi.
+                            Kami menghadirkan kemudahan jasa bagi para kostumer dan produk terbaik.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-4">
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-4">
+                        <!-- Links -->
+                        <h5 class="fw-bold"><span class="text-raintek-primary">Hubungi</span> Kami</h5>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto bg-white w-75 opacity-100" style="height: 2px"/>
+                        <p class="mb-2"><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                        <p class="mb-2"><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                        <p class="mb-2"><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <p class="mb-2"><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-4 d-flex justify-content-center pt-4">
+                        <img th:src="@{'/image/raintek white.png'}" alt="Logo" height="50"/>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4 bg-raintek-darksecondary">
+            <a href="/" class="btn btn-light rounded-circle sosmed me-2">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="/" class="btn btn-light rounded-circle sosmed me-2">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="/" class="btn btn-light rounded-circle sosmed me-2">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="/" class="btn btn-light rounded-circle sosmed me-2">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="/" class="btn btn-light rounded-circle sosmed">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <p class="mt-3 mb-0 bold">© <script>document.write(new Date().getFullYear())</script> Raintek. All Rights Reserved</p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</th:block>
+</body>
+</html>
